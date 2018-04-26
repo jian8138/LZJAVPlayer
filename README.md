@@ -2,6 +2,8 @@
 系统自带的AVPlayer用起来很费劲，许多方法调用都比较绕。这个是基于AVPlayer封装过后的播放器，提供简单的API，使用起来更方便。
 所有功能都在类 LZJAVPlayer 中提供。
 常用播放器方法：
+
+
 /** 播放状态回调代理 */
 @property(nonatomic,weak) id<AVPlayerCallbackDelegate> delegate;
 
@@ -51,6 +53,8 @@
 - (void)setMute:(BOOL)isMute;
 
 播放器回调方法：
+
+
 /**
  播放器播放状态的回调方法
  @param code 回调的各种状态码
