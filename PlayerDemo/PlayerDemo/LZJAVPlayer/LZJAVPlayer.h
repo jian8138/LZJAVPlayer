@@ -49,10 +49,9 @@ typedef enum : NSUInteger {
 @property(nonatomic,weak) id<AVPlayerCallbackDelegate> delegate;
 
 /**
- playURL 设置播放器的播放URL
- bufferTime 缓存时间，AVPlayer不支持该值
- offset 偏移时间
- parentView 播放视图的宿主视图
+ @param playURL 设置播放器的播放URL
+ @param offset 偏移时间
+ @param parentView 播放视图的宿主视图
  子播放器初始化时 用该方法
  */
 - (void)start:(NSString *)playURL offset:(NSInteger)offset parentView:(UIView *)parentView;
@@ -86,7 +85,6 @@ typedef enum : NSUInteger {
 /**
  设置视频画面拉伸方式
  @param mode 拉伸方式
- @param redraw AVPlayer(播放录像)不支持该值
  */
 - (void)setVideoScale:(LZJPlayerScaleModeType)mode;
 
